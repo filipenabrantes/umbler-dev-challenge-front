@@ -73,7 +73,7 @@ export default function Layout() {
     <Container>
       <div className={classes.root}>
         <AppBar className={classes.bar}>
-          <Typography variant="h6" className={classes.title} >
+          <Typography component={'span'} variant="h6" className={classes.title} >
             Umbler Technical Test
           </Typography>
         </AppBar>
@@ -106,7 +106,7 @@ export default function Layout() {
 
         <Grid item xs={6}>
           {whoisInfo &&
-            <Typography className={classes.status}>
+            <Typography component={'span'} className={classes.status} >
               {status && `Status: ${status}`}
             </Typography>}
           {whoisInfo && <Registrant data={whoisInfo} />}
