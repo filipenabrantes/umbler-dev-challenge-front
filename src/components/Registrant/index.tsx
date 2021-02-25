@@ -17,7 +17,7 @@ export default function Registrant(data: any) {
     }
     return values.map((value: any) => {
       return (
-        <Typography>
+        <Typography component={'span'} key={value}>
           {value}
         </Typography>
       )
@@ -35,7 +35,7 @@ export default function Registrant(data: any) {
       </AccordionSummary>
 
       <AccordionDetails>
-        <Typography display='inline'>
+        <Typography component={'span'} display='inline'>
           {traitData()}
         </Typography>
       </AccordionDetails>
